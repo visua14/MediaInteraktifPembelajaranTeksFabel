@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#FFC933">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="format-detection" content="telephone=no">
+<title>Dunia Fabel – Belajar Teks Fabel Kelas VII</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scene" aria-hidden="true">
+  <svg viewBox="0 0 1200 800" preserveAspectRatio="xMidYMax slice">
+    <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8FD6FF"/><stop offset="1" stop-color="#EAF9FF"/></linearGradient></defs>
+    <rect width="1200" height="800" fill="url(#sky)"/>
+    <circle cx="1050" cy="120" r="85" fill="#FFE27A" opacity=".5"/><circle cx="1050" cy="120" r="58" fill="#FFD23F"/>
+    <g fill="#fff" opacity=".92"><ellipse cx="190" cy="120" rx="70" ry="28"/><ellipse cx="245" cy="102" rx="50" ry="30"/><ellipse cx="300" cy="124" rx="60" ry="24"/>
+      <ellipse cx="680" cy="190" rx="60" ry="24"/><ellipse cx="730" cy="172" rx="45" ry="26"/><ellipse cx="780" cy="194" rx="52" ry="20"/></g>
+    <path d="M0 560 Q200 450 420 540 T820 520 T1200 490 V800 H0Z" fill="#A8EBB9"/>
+    <path d="M0 650 Q250 560 520 640 T1200 610 V800 H0Z" fill="#7DDB9B"/>
+    <g><rect x="112" y="585" width="18" height="70" rx="6" fill="#A9743F"/><circle cx="121" cy="555" r="52" fill="#38B26A"/><circle cx="88" cy="588" r="34" fill="#4CC87C"/><circle cx="156" cy="590" r="32" fill="#4CC87C"/></g>
+    <g><rect x="1042" y="560" width="22" height="95" rx="7" fill="#A9743F"/><circle cx="1053" cy="520" r="68" fill="#38B26A"/><circle cx="1010" cy="565" r="42" fill="#4CC87C"/><circle cx="1098" cy="568" r="40" fill="#4CC87C"/><circle cx="1040" cy="500" r="12" fill="#FF6F61"/><circle cx="1075" cy="535" r="12" fill="#FF6F61"/></g>
+    <g><rect x="585" y="615" width="12" height="45" rx="4" fill="#A9743F"/><circle cx="591" cy="595" r="34" fill="#38B26A"/></g>
+    <path d="M0 725 Q300 690 600 718 T1200 700 V800 H0Z" fill="#5CC882"/>
+    <g stroke="#2E9E5B" stroke-width="3"><path d="M230 770v-26M330 775v-24M470 772v-28M690 776v-26M860 770v-24M980 774v-28"/></g>
+    <g><circle cx="230" cy="742" r="9" fill="#FF8FC7"/><circle cx="330" cy="749" r="9" fill="#FFC933"/><circle cx="470" cy="744" r="9" fill="#fff"/><circle cx="690" cy="750" r="9" fill="#FF8FC7"/><circle cx="860" cy="744" r="9" fill="#FFC933"/><circle cx="980" cy="746" r="9" fill="#fff"/></g>
+  </svg>
+  <span class="fly f1">🦋</span><span class="fly f2">🐦</span><span class="fly f3">🐝</span>
+  <div class="ground"><span>🌻</span><span>🐇</span><span>🌷</span><span>🦔</span><span>🍄</span><span>🐢</span><span>🌼</span><span>🦊</span><span>🌸</span></div>
+</div>
+
+<header>
+  <button class="logo" data-go="home">🦊 Dunia Fabel</button>
+  <nav aria-label="Menu utama" id="nav"></nav>
+</header>
+<div class="bar" aria-hidden="true"><i id="prog"></i></div>
+
+<audio id="bgm" src="backsound.mp3" loop preload="auto"></audio>
+<button class="btn sound" id="sndBtn" aria-pressed="false" aria-label="Nyalakan musik latar"><span id="sndIco">🔇</span><span id="sndTxt">Musik: Mati</span></button>
+
+<main>
+
+<!-- 1. PEMBUKA -->
+<section class="page on" id="home">
+  <div class="hero">
+    <div class="zoo" aria-hidden="true"><span>🐭</span><span>🦊</span><span>🐢</span><span>🦁</span><span>🐊</span></div>
+    <h1>Yuk, Belajar Teks Fabel!</h1>
+    <p>Media belajar interaktif Bahasa Indonesia untuk siswa kelas VII SMP. Kenali cerita hewan yang pintar bicara dan temukan pesan moral di dalamnya.</p>
+    <button class="btn big mint" data-go="tujuan">Mulai Belajar 🚀</button>
+  </div>
+  <div class="grid menu" id="menuHome"></div>
+</section>
+
+<!-- 2. TUJUAN -->
+<section class="page" id="tujuan">
+  <h2>🎯 Tujuan Pembelajaran</h2>
+  <div class="card y">
+    <p>Setelah belajar di sini, kamu bisa:</p>
+    <ol class="steps">
+      <li>Menjelaskan pengertian dan ciri-ciri teks fabel.</li>
+      <li>Menentukan struktur teks fabel: orientasi, komplikasi, resolusi, dan koda.</li>
+      <li>Mengenali tokoh, watak, latar, dan amanat dalam fabel.</li>
+      <li>Menemukan kaidah kebahasaan teks fabel.</li>
+      <li>Menjawab kuis tentang teks fabel dengan benar.</li>
+    </ol>
+  </div>
+  <div class="row"><button class="btn" data-go="home">⬅ Kembali</button><button class="btn mint" data-go="materi">Lanjut ke Materi ➡</button></div>
+</section>
+
+<!-- 3. MATERI -->
+<section class="page" id="materi">
+  <h2>📚 Materi Teks Fabel</h2>
+  <div class="tabs" id="tabs"></div>
+
+  <div class="tab on" id="t0"><div class="card s">
+    <h3>Apa itu fabel?</h3>
+    <p>Fabel adalah cerita fiksi tentang kehidupan hewan yang berperilaku seperti manusia. Hewan dalam fabel bisa berbicara, berpikir, dan punya sifat seperti kita. Fabel dibuat untuk menyampaikan pelajaran hidup.</p>
+    <h3>Ciri-ciri fabel</h3>
+    <ol class="steps">
+      <li>🐾 Tokoh utamanya hewan (kadang juga tumbuhan atau benda).</li>
+      <li>🗣️ Hewan berperilaku dan berbicara seperti manusia.</li>
+      <li>📖 Ceritanya rekaan, bukan kejadian nyata.</li>
+      <li>💡 Mengandung pesan moral atau amanat.</li>
+    </ol></div></div>
+
+  <div class="tab" id="t1"><div class="card m">
+    <h3>Struktur teks fabel</h3>
+    <ol class="steps">
+      <li><b>Orientasi</b> – pengenalan tokoh, tempat, dan waktu.</li>
+      <li><b>Komplikasi</b> – munculnya masalah atau konflik.</li>
+      <li><b>Resolusi</b> – penyelesaian masalah.</li>
+      <li><b>Koda</b> – penutup berisi pesan moral atau amanat.</li>
+    </ol></div></div>
+
+  <div class="tab" id="t2"><div class="card p">
+    <h3>Unsur-unsur fabel</h3>
+    <div class="grid">
+      <div class="card"><span class="big-emoji">🐢</span><b>Tokoh dan watak</b><br>Pelaku cerita beserta sifatnya, misalnya kancil cerdik dan buaya serakah.</div>
+      <div class="card"><span class="big-emoji">🌳</span><b>Latar</b><br>Tempat, waktu, dan suasana, misalnya di tepi sungai pada siang hari.</div>
+      <div class="card"><span class="big-emoji">🧭</span><b>Alur</b><br>Urutan peristiwa dari awal sampai akhir cerita.</div>
+      <div class="card"><span class="big-emoji">💌</span><b>Amanat</b><br>Pesan moral yang ingin disampaikan kepada pembaca.</div>
+    </div></div></div>
+
+  <div class="tab" id="t3"><div class="card c">
+    <h3>Kaidah kebahasaan</h3>
+    <ol class="steps">
+      <li><b>Kata kerja perbuatan</b> – berlari, melompat, menipu, menolong.</li>
+      <li><b>Kata sambung waktu</b> – suatu hari, kemudian, setelah itu, akhirnya.</li>
+      <li><b>Kalimat langsung</b> – memakai tanda petik, misalnya “Tolong aku!” teriak kancil.</li>
+      <li><b>Kata sifat</b> – cerdik, serakah, sombong, baik hati.</li>
+      <li><b>Sudut pandang</b> – umumnya orang ketiga (dia, ia, nama tokoh).</li>
+    </ol></div></div>
+
+  <div class="row"><button class="btn" data-go="tujuan">⬅ Kembali</button><button class="btn mint" data-go="contoh">Lihat Contoh ➡</button></div>
+</section>
+
+<!-- 4. CONTOH -->
+<section class="page" id="contoh">
+  <h2>🐭 Contoh Teks Fabel</h2>
+  <div class="card story">
+    <h3>Kancil dan Buaya</h3>
+    <p style="--c:var(--sky)"><span class="tag" style="background:var(--sky)">Orientasi</span><br>Pada suatu siang yang terik, Kancil berdiri di tepi sungai. Ia ingin menyeberang untuk memakan mentimun di kebun seberang. Namun, sungai itu dihuni banyak buaya yang lapar.</p>
+    <p style="--c:var(--coral)"><span class="tag" style="background:var(--coral)">Komplikasi</span><br>“Hai Buaya, aku membawa kabar gembira,” seru Kancil. “Raja hutan akan membagikan daging untuk kalian, tetapi aku harus menghitung jumlah kalian dulu.” Para buaya pun berbaris dari tepi sungai sampai ke seberang. Kancil melompat di punggung mereka sambil menghitung. Buaya terakhir menyadari bahwa dirinya sedang ditipu.</p>
+    <p style="--c:var(--mint)"><span class="tag" style="background:var(--mint)">Resolusi</span><br>“Kamu menipu kami!” teriak buaya itu. Namun, Kancil sudah mendarat dengan selamat di seberang. Ia tertawa dan berlari menuju kebun mentimun, sementara para buaya hanya bisa menggerutu.</p>
+    <p style="--c:var(--pink)"><span class="tag" style="background:var(--pink)">Koda</span><br>Amanat: kecerdikan dapat menyelamatkan kita dari bahaya, tetapi gunakanlah untuk kebaikan dan jangan untuk menipu.</p>
+  </div>
+  <div class="card y"><h3>Ayo temukan!</h3>
+    <p><b>Tokoh:</b> Kancil (cerdik) dan para buaya (serakah dan mudah percaya).<br><b>Latar:</b> tepi sungai, siang hari.<br><b>Kata kerja:</b> berdiri, melompat, menipu, berlari.<br><b>Kalimat langsung:</b> “Kamu menipu kami!” teriak buaya itu.</p></div>
+  <div class="row"><button class="btn" data-go="materi">⬅ Materi</button><button class="btn mint" data-go="video">Tonton Video ➡</button></div>
+</section>
+
+<!-- 5. VIDEO -->
+<section class="page" id="video">
+  <h2>🎬 Video Pembelajaran</h2>
+  <div class="video" id="videoBox"></div>
+  <p style="margin-top:1rem">Tonton videonya sampai selesai, lalu catat tokoh, watak, dan amanat ceritanya sebelum mengerjakan kuis.</p>
+  <div class="row"><button class="btn" data-go="contoh">⬅ Contoh</button><button class="btn coral" data-go="game">Main Game 🎮</button></div>
+</section>
+
+<!-- GAME -->
+<section class="page" id="game">
+  <h2>🎮 Game Edukatif Fabel</h2>
+  <div class="tabs">
+    <button class="btn sky" data-g="0">🐾 Cocokkan Watak</button>
+    <button class="btn pink" data-g="1">🧩 Susun Cerita</button>
+  </div>
+  <div class="card y" id="gm0"></div>
+  <div class="card m" id="gm1" hidden></div>
+  <div class="row"><button class="btn" data-go="video">⬅ Video</button><button class="btn coral" data-go="kuis">Ke Kuis ✏️</button></div>
+</section>
+
+<!-- 6. KUIS -->
+<section class="page" id="kuis">
+  <h2>✏️ Kuis Fabel</h2>
+  <div id="quizBox"></div>
+</section>
+
+<!-- 7. HASIL -->
+<section class="page" id="hasil">
+  <h2>🏆 Hasil Kuis</h2>
+  <div id="resultBox"></div>
+</section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
